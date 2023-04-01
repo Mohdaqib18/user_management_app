@@ -3,6 +3,8 @@ import LoggedInUserPage from "./components/LoggedInUserPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import { Auth0ProviderWithNavigate } from "../src/components/Auth0ProviderNavigate";
+import { AuthenticationGuard } from "./components/AuthenticationGuard";
+
 
 function App() {
 	const domain = "dev-76jmhxudzvoqistv.us.auth0.com";
@@ -21,8 +23,12 @@ function App() {
 					>
 						<Routes>
 							<Route path="/" element={<LandingPage />} />
+							<Route
+								path="/profile"
+								element={<AuthenticationGuard component={LoggedInUserPage} />}
+							/>
 
-							<Route path="/profile" element={<LoggedInUserPage />} />
+							{/* <Route path="/profile" element={<LoggedInUserPage />} /> */}
 						</Routes>
 					</Auth0ProviderWithNavigate>
 				</BrowserRouter>
