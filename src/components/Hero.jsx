@@ -17,7 +17,8 @@ const Hero = () => {
 
 				{!isAuthenticated && !isLoading && (
 					<>
-						<LoginButton />
+						<LoginButton name="Log in" route="/profile"/>
+						<LoginButton name="Admin Login" route="/admin" />
 					</>
 				)}
 			</div>

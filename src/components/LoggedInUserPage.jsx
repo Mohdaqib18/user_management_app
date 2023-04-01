@@ -8,9 +8,9 @@ const LoggedInUserPage = () => {
 	if (isLoading) {
 		return <div>Loading ...</div>;
 	}
-	// if (!isAuthenticated) {
-	// 	window.location.href = "http://localhost:5174";
-	// }
+
+
+
 	return (
 		isAuthenticated && (
 			<div className="h-[100vh] border-[2px] border-x-pink-950 flex items-center justify-center">
