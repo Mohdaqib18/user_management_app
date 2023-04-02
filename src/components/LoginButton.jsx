@@ -14,7 +14,7 @@ export const LoginButton = ({name, route}) => {
 
 	return (
 		<button
-			className="bg-[#faa307]  rounded-[100px] font-[600] text-[40px] p-[10px] mt-10 text-white w-[280px] mx-5"
+			className="bg-[#faa307]  rounded-[100px] font-[600] sm:text-[30px] p-[10px] mt-10 text-white w-[280px] mx-5 xs:text-[20px]"
 			onClick={handleLogin}
 		>
 		{name}

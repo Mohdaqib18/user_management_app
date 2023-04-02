@@ -4,8 +4,9 @@ import Navbar from "./Navbar";
 
 const LandingPage = () => {
 	return (
-		<div>
+		<div className="overflow-hidden" >
 			<Navbar />
+
 			<Hero />
 		</div>
 	);
