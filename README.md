@@ -1,6 +1,20 @@
 # user_management_app
 Role based authentication management app
 
+Instructions to Get the Server Running on Local
+-----------------------------------------------------
+1) Download the User Management Server From https://github.com/Mohdaqib18/user_management_server
+2) Run npm run dev at the root of the downloaded directory
+3) If you want to try the /users endpoint to get a response from the server  - you can do so by entering http://localhost:8000/users
+
+Instructions to Get The App Working on Local
+------------------------------------------------------
+1) Download the React App for Client from: https://github.com/Mohdaqib18/user_management_app
+2) Run npm install, followed by npm run dev at the root of the client app
+3) Client will start running on http://localhost:5173 or http://localhost:5174
+
+You'll need to run the server before the client app is run. To deploy to production, we just need to get a custom domain, change the allowed urls with this custom domain in auth0 dashboard, and host the client and server on a cloud hosting solution.
+
 # Here's a demo:
 
 
